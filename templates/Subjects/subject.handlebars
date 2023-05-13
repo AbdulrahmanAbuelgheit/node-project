@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,258 +8,290 @@
   <link rel="stylesheet" href="../Css/student2.css" />
   <link rel="shortcut icon" href="https://mu.menofia.edu.eg/PrtlFiles/uni/Portal/SiteInfo/uni_en.png">
   <!-- Font Awesome Cdn Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <title>Student</title>
 </head>
 <style>
   /*  import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body{
-  background: rgb(226, 226, 226);
-}
-nav{
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  left: 0;
-  width: 90px;
-  /* width: 280px; */
-  background: #fff;
-  overflow: hidden;
-  transition: 1s;
-}
-nav:hover{
-  width: 280px;
-  transition: 1s;
-}
-.logo{
-  text-align: center;
-  display: flex;
-  margin: 10px 0 0 10px;
-  padding-bottom: 3rem;
-}
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-.logo img{
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-}
-.logo span{
-  font-weight: bold;
-  padding-left: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-a{
-  position: relative;
-  width: 280px;
-  font-size: 14px;
-  color: rgb(85, 83, 83);
-  display: table;
-  padding: 10px;
-}
-nav .fas{
-  position: relative;
-  width: 70px;
-  height: 40px;
-  top: 20px;
-  font-size: 20px;
-  text-align: center;
-}
-.nav-item{
-  position: relative;
-  top: 12px;
-  margin-left: 10px;
-}
-a:hover{
-  background: #eee;
-}
-a:hover i{
-  color: #34AF6D;
-  transition: 0.5s;
-}
-.logout{
-  position: absolute;
-  bottom: 0;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
 
-.container{
-  display: flex;
-}
-/* cards */
-.search{
-  display: flex;
-}
-.searchicons {
-  /* margin: 200px auto; */
-  background: #fff;
-  height: 30px;
-  border-radius: 30px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.8s;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
-}
-.searchicons:hover .input {
-  width: 400px;
-}
-.searchicons .input {
-  background: transparent;
-  border: none;
-  outline: none;
-  width: 0px;
-  font-weight: 500;
-  font-size: 16px;
-  transition: 0.8s;
-}
+  body {
+    background: rgb(226, 226, 226);
+  }
 
-.searchicons .btn .fas {
-  color: #aa00ff;
-}
+  nav {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    width: 90px;
+    /* width: 280px; */
+    background: #fff;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  nav:hover {
+    width: 280px;
+    transition: 1s;
+  }
+
+  .logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+    padding-bottom: 3rem;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  .logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  a {
+    position: relative;
+    width: 280px;
+    font-size: 14px;
+    color: rgb(85, 83, 83);
+    display: table;
+    padding: 10px;
+  }
+
+  nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+  }
+
+  a:hover {
+    background: #eee;
+  }
+
+  a:hover i {
+    color: #34AF6D;
+    transition: 0.5s;
+  }
+
+  .logout {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  /* cards */
+  .search {
+    display: flex;
+  }
+
+  .searchicons {
+    /* margin: 200px auto; */
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .searchicons:hover .input {
+    width: 400px;
+  }
+
+  .searchicons .input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+  }
+
+  .searchicons .btn .fas {
+    color: #aa00ff;
+  }
 
 
 
-/* MAin Section */
-.main{
-  position: relative;
-  padding: 20px;
-  width: 100%;
-}
-.main-top{
-  display: flex;
-  width: 100%;
-}
-.main-top i{
-  position: absolute;
-  right: 0;
-  margin: 10px 30px;
-  color: rgb(110, 109, 109);
-  cursor: pointer;
-}
-.main .users{
-  display: flex;
-  width: 100%;
-}
-.users .card{
-  width: 11%;
-  margin: 10px;
-  background: #fff;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-}
-/* .users .card img{
+  /* MAin Section */
+  .main {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .main-top {
+    display: flex;
+    width: 100%;
+  }
+
+  .main-top i {
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(110, 109, 109);
+    cursor: pointer;
+  }
+
+  .main .users {
+    display: flex;
+    width: 100%;
+  }
+
+  .users .card {
+    width: 11%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+
+  /* .users .card img{
   width: 70px;
   height: 70px;
   border-radius: 50%;
 } */
-.users .card h4{
-  text-transform: uppercase;
-}
-.users .card p{
-  font-size: 12px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-.users table{
-  margin:  auto;
-}
-.users .per span{
-  padding: 5px;
-  border-radius: 10px;
-  background: rgb(223, 223, 223);
-}
-.users td{
-  font-size: 14px;
-  padding-right: 15px;
-}
-.users .card button{
-  width: 100%;
-  margin-top: 8px;
-  padding: 7px;
-  cursor: pointer;
-  border-radius: 10px;
-  background: transparent;
-  border: 1px solid #4AD489;
-}
-.users .card button:hover{
-  background: #4AD489;
-  color: #fff;
-  transition: 0.5s;
-}
+  .users .card h4 {
+    text-transform: uppercase;
+  }
 
-table, th, td {
-  border: 0.5px solid #f2f2f2;
-  border-collapse: collapse;
-  padding: 20px;
-  color: #34AF6D;
- 
-}
-th {
-  text-align: left;
-  /* margin: 50px; */
-}
-.btn{
-  margin-top: 20px;
-  margin-left: 530px;
-}
- .btn a{
-  width: 250px;
- text-decoration: none;
- background-color: #4AD489;
-  margin-top: 8px;
-  padding: 7px;
-  cursor: pointer;
-  border-radius: 10px;
+  .users .card p {
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
 
-  border: 2px solid #4AD489;
-  font-size: 15px;
-  text-align: center;
-  font-weight: bold;
+  .users table {
+    margin: auto;
+  }
 
-}  
+  .users .per span {
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(223, 223, 223);
+  }
 
-.btn a:hover {
-   background: #4AD489; 
-  color: #fff;
-  transition: 0.5s;
-}
+  .users td {
+    font-size: 14px;
+    padding-right: 15px;
+  }
 
+  .users .card button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #4AD489;
+  }
+
+  .users .card button:hover {
+    background: #4AD489;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  table,
+  th,
+  td {
+    border: 0.5px solid #f2f2f2;
+    border-collapse: collapse;
+    padding: 20px;
+    color: #34AF6D;
+
+  }
+
+  th {
+    text-align: left;
+    /* margin: 50px; */
+  }
+
+  .btn {
+    margin-top: 20px;
+    margin-left: 530px;
+  }
+
+  .btn a {
+    width: 250px;
+    text-decoration: none;
+    background-color: #4AD489;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    border: 2px solid #4AD489;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+
+  }
+
+  .btn a:hover {
+    background: #4AD489;
+    color: #fff;
+    transition: 0.5s;
+  }
 </style>
+
 <body>
   <div class="container">
     <nav>
-        <ul>
-          <li><a href="#" class="logo">
+      <ul>
+        <li><a href="#" class="logo">
             <img src="https://as2.ftcdn.net/v2/jpg/02/74/17/53/1000_F_274175304_pRRrMBZpxKREp3rtoeRCfTxAoEQqyPbd.jpg">
             <span class="nav-item">Student</span>
           </a></li>
-          <li><a href="/">
+        <li><a href="/">
             <i class="fas fa-home"></i>
             <span class="nav-item">Home</span>
           </a></li>
-          <li><a href="students">
+        <li><a href="students">
             <i class="fas fa-chart-bar"></i>
             <span class="nav-item">courses</span>
           </a></li>
-          <li><a href="students/#fh2">
+        <li><a href="students/#fh2">
             <i class="fas fa-comment"></i>
             <span class="nav-item">Review</span>
           </a></li>
-          <!-- <li><a href="#">
+        <!-- <li><a href="#">
             <i class="fas fa-chart-bar"></i>
             <span class="nav-item">Attendance</span>
           </a></li>
@@ -266,200 +299,114 @@ th {
             <i class="fas fa-cog"></i>
             <span class="nav-item">Setting</span>
           </a></li> -->
-  
-          <li><a href="/" class="logout">
+
+        <li><a href="/" class="logout">
             <i class="fas fa-sign-out-alt"></i>
             <span class="nav-item">Log out</span>
           </a></li>
-        </ul>
-      </nav>
-        <section class="main">
-        
-          <div class="main-top">
-            <h1>Subjects</h1>
-            <i class="fas fa-user-cog"></i>
-          </div>
-         
-        
-          <div class="users">
-            <div class="card">
-          
-              <h4>Android</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Kbs</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>SoftWare</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Machine</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Math-3</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Security</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Programming-3</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Data-base -1</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Data-base -2</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-           
-            
-              
-          
-          </div>
-        
+      </ul>
+    </nav>
+    <form class="main" method="POST" action="/students">
+      <div class="main-top">
+        <h1>Subjects</h1>
+        <i class="fas fa-user-cog"></i>
+      </div>
 
-          <div class="users">
-            <div class="card">
-          
-              <h4>Os-2</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card" >
-          
-              <h4>Os-1</h4>
-             
-              
-              <input type="checkbox" onclick="add()">
-            </div>
-            <div class="card">
-          
-              <h4>SoftWare-2</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Software-1</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Data Structure</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Programming-1</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4>Programming-2</h4>
-             
-              
-              <input type="checkbox">
-            </div>
-            <div class="card">
-          
-              <h4 for="myCheck2">Math-2</h4>
-             
-             
-              <input type="checkbox" id="myCheck2" onclick="myFunction()">
-            </div>
-            <div class="card">
-          
-               
-             
-        
-<h4 for="myCheck">Math-1</h4>
-             
-             
-<input type="checkbox" id="myCheck" onclick="myFunction()">
-            </div>
-           
-            
-              
-          
-          </div>
+      <div class="users">
 
-        
-          <div class="table">
-            <table style="width:100%" >
-              <tr >
-                <th id="text" style="display:none" >Math-1</th>
-                <th id="text" style="display:none" >Math-2</th>
-              </tr>
-            
-            </table>
-          </div>
-          <div class="btn">
+        <div class="card">
+          <h4>Security</h4>
+          <input type="checkbox">
+        </div>
+        <div class="card">
 
-          
-          <a href="students"> <button">Sumbit</button></a>
+          <h4>Programming-3</h4>
 
+          <input type="checkbox">
+        </div>
+        <div class="card">
+
+          <h4>Data-base -1</h4>
+          <input type="checkbox">
+        </div>
+        <div class="card">
+
+          <h4>Data-base -2</h4>
+
+          <input type="checkbox">
         </div>
 
-       
-      </section>
+      </div>
 
+      <div class="users">
+        <div class="card">
+
+          <h4>Os-2</h4>
+
+          <input type="checkbox">
+        </div>
+        <div class="card">
+          <h4>SoftWare-2</h4>
+          <input type="checkbox">
+        </div>
+        <div class="card">
+
+          <h4 for="myCheck2">Math-2</h4>
+
+          <input type="checkbox" id="myCheck2" onclick="myFunction()">
+        </div>
+        <div class="card">
+
+          <h4 for="myCheck">Math-1</h4>
+
+
+          <input type="checkbox" id="myCheck" onclick="myFunction()">
+        </div>
+      </div>
       
+      {{#each subject}}
+      <div class="users">
+      <div class="card" value="{{_id}}">
+       <h4>{{name}}</h4>
+       <input type="checkbox">
+       </div>
+      {{/each}}
+      <div class="table">
+        <table style="width:100%">
+          <tr>
+            <th id="text" style="display:none">Math-1</th>
+            <th id="text" style="display:none">Math-2</th>
+          </tr>
 
-     
+        </table>
+      </div>
+      <div class="btn">
+
+
+        <a href="students"> <button type="submit" > Sumbit</button></a>
+
+      </div>
+
+
+    </form>
+
+
+
+
   </div>
   <script>
-function myFunction() {
-  var checkBox = document.getElementById("myCheck");
-  var text = document.getElementById("text");
-  if (checkBox.checked == true){
-    text.style.display = "block";
-  } else {
-     text.style.display = "none";
-  }
-}
+    function myFunction() {
+      var checkBox = document.getElementById("myCheck");
+      var text = document.getElementById("text");
+      if (checkBox.checked == true) {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+
 
   </script>
 </body>
+
 </html>

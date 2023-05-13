@@ -12,334 +12,337 @@
   <title>System Admin</title>
 </head>
 <style>
-/*  import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+  /*  import google fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
 
-body {
-  background: rgb(226, 226, 226);
-}
+  body {
+    background: rgb(226, 226, 226);
+  }
 
-nav {
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  left: 0;
-  width: 90px;
-  /* width: 280px; */
-  background: #fff;
-  overflow: hidden;
-  transition: 1s;
-}
+  nav {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    width: 90px;
+    /* width: 280px; */
+    background: #fff;
+    overflow: hidden;
+    transition: 1s;
+  }
 
-nav:hover {
-  width: 280px;
-  transition: 1s;
-}
+  nav:hover {
+    width: 280px;
+    transition: 1s;
+  }
 
-.logo {
-  text-align: center;
-  display: flex;
-  margin: 10px 0 0 10px;
-  padding-bottom: 3rem;
-}
+  .logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+    padding-bottom: 3rem;
+  }
 
-.logo img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-}
+  .logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
 
-.logo span {
-  font-weight: bold;
-  padding-left: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
+  .logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 
-a {
-  position: relative;
-  width: 280px;
-  font-size: 14px;
-  color: rgb(85, 83, 83);
-  display: table;
-  padding: 10px;
-}
+  a {
+    position: relative;
+    width: 280px;
+    font-size: 14px;
+    color: rgb(85, 83, 83);
+    display: table;
+    padding: 10px;
+  }
 
-nav .fas {
-  position: relative;
-  width: 70px;
-  height: 40px;
-  top: 20px;
-  font-size: 20px;
-  text-align: center;
-}
+  nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
 
-.nav-item {
-  position: relative;
-  top: 12px;
-  margin-left: 10px;
-}
+  .nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+  }
 
-a:hover {
-  background: #eee;
-}
+  a:hover {
+    background: #eee;
+  }
 
-a:hover i {
-  color: #34AF6D;
-  transition: 0.5s;
-}
+  a:hover i {
+    color: #34AF6D;
+    transition: 0.5s;
+  }
 
-.logout {
-  position: absolute;
-  bottom: 0;
-}
+  .logout {
+    position: absolute;
+    bottom: 0;
+  }
 
-.container {
-  display: flex;
-}
+  .container {
+    display: flex;
+  }
 
-span {
-  font-size: 10px;
-}
+  span {
+    font-size: 10px;
+  }
 
-.form-box {
+  .form-box {
 
-  width: 70%;
-  max-width: 400px;
-  height: 530px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #fff;
-  padding: 50px 60px 70px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  /* flex-direction: column; */
-  margin-top: 30px;
-  border-radius: 50px;
+    width: 70%;
+    max-width: 400px;
+    height: 530px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* flex-direction: column; */
+    margin-top: 30px;
+    border-radius: 50px;
 
-}
+  }
 
-.form-box h1 {
+  .form-box h1 {
 
-  font-size: 25px;
-  margin-bottom: 0px;
-  margin-right: 30px;
-  position: relative;
-  color: #2eb068;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-right: 30px;
+    position: relative;
+    color: #2eb068;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
 
-.input-field {
-  background: #eaeaea;
-  margin: 15px auto;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
+  .input-field {
+    background: #eaeaea;
+    margin: 15px auto;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 
-}
+  }
 
- input {
- 
-  background: transparent;
-  border: 0;
-  outline: 0;
-  padding: 18px 15px;
-  font-weight: bold;
+  input {
 
-} 
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+    font-weight: bold;
 
-.input-field i {
-  margin: 15px;
-  color: #999;
+  }
 
-}
+  .input-field i {
+    margin: 15px;
+    color: #999;
 
-
-input[type="password"]:hover {
-  opacity: .5;
-}
-
-input[type="text"]:hover {
-  opacity: .5;
-}
-
-input:focus {
-  border: 1px solid rgb(192, 192, 192);
-  display: inline;
-}
-
-button {
-  width: 100%;
-  margin-top: 8px;
-  padding: 7px;
-  cursor: pointer;
-  border-radius: 10px;
-  background: transparent;
-  border: 1px solid #4AD489;
-  font-size: 15px;
-
-}
-
-button:hover {
-  background: #4AD489;
-  color: #fff;
-  transition: 0.5s;
-}
+  }
 
 
-.icons {
-  margin-right: 35px;
-  padding: 5px;
-}
+  input[type="password"]:hover {
+    opacity: .5;
+  }
 
-.icons {
-  color: rgb(85, 83, 83);
-  cursor: pointer;
-  margin-left: 30px;
-  margin-top: 20px;
-}
+  input[type="text"]:hover {
+    opacity: .5;
+  }
 
-.icons :hover {
-  opacity: .7;
-}
+  input:focus {
+    border: 1px solid rgb(192, 192, 192);
+    display: inline;
+  }
 
-.department {
-  width: 70%;
-  max-width: 400px;
-  height: 450px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #fff;
-  padding: 50px 60px 70px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  /* flex-direction: column; */
-  /* margin-top: 30px; */
-  border-radius: 50px;
-}
+  button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #4AD489;
+    font-size: 15px;
 
-.department h1 {
+  }
 
-  font-size: 20px;
-  margin-bottom: 0px;
-  margin-right: 30px;
-  position: relative;
-  color: #2eb068;
-  font-weight: bold;
-  margin-bottom: 30px;
-  margin-left: 10px;
-}
+  button:hover {
+    background: #4AD489;
+    color: #fff;
+    transition: 0.5s;
+  }
 
-.subject {
-  width: 400px;
-  max-width: 500px;
-  height: 530px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #fff;
-  padding: 50px 60px 70px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin-top: 10px;
-  border-radius: 50px;
-}
 
-.subject h1 {
+  .icons {
+    margin-right: 35px;
+    padding: 5px;
+  }
 
-  font-size: 20px;
-  margin-bottom: 0px;
-  margin-right: 30px;
-  position: relative;
-  color: #2eb068;
-  font-weight: bold;
-  margin-bottom: 30px;
-  margin-left: 10px;
-}
+  .icons {
+    color: rgb(85, 83, 83);
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
 
-.terms {
-  margin-top: 15px;
-  margin-bottom: 10px;
-margin-right: 10px;
-padding: 0 10px 0 10px;
-  /* display: flex; */
-}
+  .icons :hover {
+    opacity: .7;
+  }
 
- .terms input {
-   margin-left: 15px; 
-}
-.terms label{
-color: #2eb068;
-margin-right: 10px;
-}  
-.attendane {
-  width:1000px;
-  /* max-width: 400px; */
-  height: 550px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #fff;
-  padding: 50px 60px 70px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  /* flex-direction: column; */
-  /* margin-top: 30px; */
-  border-radius: 50px;
-  margin-left: 40px;
-}
-/* body {
+  .department {
+    width: 70%;
+    max-width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* flex-direction: column; */
+    /* margin-top: 30px; */
+    border-radius: 50px;
+  }
+
+  .department h1 {
+
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-right: 30px;
+    position: relative;
+    color: #2eb068;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+
+  .subject {
+    width: 400px;
+    max-width: 500px;
+    height: 530px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 50px;
+  }
+
+  .subject h1 {
+
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-right: 30px;
+    position: relative;
+    color: #2eb068;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+
+  .terms {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 0 10px 0 10px;
+    /* display: flex; */
+  }
+
+  .terms input {
+    margin-left: 15px;
+  }
+
+  .terms label {
+    color: #2eb068;
+    margin-right: 10px;
+  }
+
+  .attendane {
+    width: 1000px;
+    /* max-width: 400px; */
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* flex-direction: column; */
+    /* margin-top: 30px; */
+    border-radius: 50px;
+    margin-left: 40px;
+  }
+
+  /* body {
     line-height: 1.6;
     margin: 2em;
  }  */
 
-th {
+  th {
     background-color: #001f3f;
     color: #fff;
     padding: 0.5em 1em;
-}
+  }
 
-td {
+  td {
     border-top: 1px solid #eee;
     padding: 0.5em 1em;
-}
+  }
 
-input {
+  input {
     cursor: pointer;
-}
+  }
 
-/* Column types */
-th.missed-col {
+  /* Column types */
+  th.missed-col {
     background-color: #f00;
-}
+  }
 
-td.missed-col {
+  td.missed-col {
     background-color: #ffecec;
     color: #f00;
     text-align: center;
-}
+  }
 
-.name-col {
+  .name-col {
     text-align: left;
-}
-
+  }
 </style>
+
 <body>
   <d class="container">
     <nav>
@@ -369,7 +372,7 @@ td.missed-col {
             <i class="fas fa-cog"></i>
             <span class="nav-item">Adding Subjects</span>
           </a></li>
-          <li><a href="#" onclick="attendace()">
+        <li><a href="#" onclick="attendace()">
             <i class="fas fa-database"></i>
             <span class="nav-item">Attendance</span>
           </a></li>
@@ -385,31 +388,31 @@ td.missed-col {
 
       <h1> Students Sign Up</h1>
 
-      <form action="">
+      <form action="students" method="POST">
         <div class="input-group">
 
 
           <div class="input-field">
             <i class="fas fa-user-alt"></i>
-            <input type="text" placeholder="UserName"><br>
+            <input name="username" type="text" placeholder="UserName"><br>
           </div>
 
 
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password">
+            <input name="password" type="password" placeholder="Password">
           </div>
           <div class="input-field">
             <i class="fas fa-envelope-open"></i>
 
 
-            <input type="text" placeholder="Academic Number">
+            <input name="acadimicNumber" type="text" placeholder="Academic Number">
           </div>
 
 
         </div>
 
-        <button class="btn" type="button"> Create Account</button>
+        <button class="btn btn-success" type="submit"> Create Account</button>
 
         <section class="footer">
 
@@ -430,31 +433,31 @@ td.missed-col {
 
       <h1> Doctors Sign Up</h1>
 
-      <form action="">
+      <form action="/doctors" method="POST">
         <div class="input-group">
 
 
           <div class="input-field">
             <i class="fas fa-user-alt"></i>
-            <input type="text" placeholder=" Doctor UserName"><br>
+            <input type="text" name="username" placeholder=" Doctor UserName"><br>
           </div>
 
           <div class="input-field">
             <i class="fas fa-envelope-open"></i>
 
 
-            <input type="email" placeholder="Email">
+            <input name="email" type="email" placeholder="Email">
           </div>
 
 
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password">
+            <input name="password" type="password" placeholder="Password">
           </div>
 
 
         </div>
-        <button class="btn" type="button"> Create Account</button>
+        <button class="btn btn-success" type="submit"> Create Account</button>
 
         <section class="footer">
 
@@ -474,20 +477,20 @@ td.missed-col {
 
     <div class="department" id="3" style="visibility:visible;">
       <h1> Department Adding</h1>
-      <form action="">
+      <form action='/admins' method='POST'>
         <div class="input-group">
 
 
           <div class="input-field">
             <i class="fas fa-user-alt"></i>
-            <input type="text" placeholder=" Department Name"><br>
+            <input name="name" type="text" placeholder=" Department Name"> <br>
           </div>
 
           <div class="input-field">
             <i class="fas fa-database"></i>
-            <input type="text" placeholder=" Department Code"><br>
+            <input name="code" type="text" placeholder=" Department Code"><br>
           </div>
-          <button class="btn" type="button"> Adding</button>
+          <button class="btn btn-success" type="submit"> Create</button>
 
           <section class="footer">
 
@@ -506,171 +509,165 @@ td.missed-col {
 
     <div class="subject" id="4" style="visibility: hidden;">
       <h1> Subject Adding</h1>
-      <form action="">
+      <form action="/subjects" method="POST">
         <div class="input-group">
-
-
           <div class="input-field">
             <i class="fas fa-user-alt"></i>
-            <input type="text" placeholder=" Subject Name"><br>
+            <input name="name" type="text" placeholder=" Subject Name"><br>
           </div>
 
           <div class="input-field">
             <i class="fas fa-database"></i>
-            <input type="text" placeholder=" Subject Code"><br>
+            <input name="code" type="text" placeholder=" Subject Code"><br>
           </div>
           <div class="input-field">
             <i class="fas fa-chart-bar"></i>
-            <input type="text" placeholder=" pre-requisite"><br>
+            <input name="pre" type="text" placeholder=" pre-requisite"><br>
           </div>
           <label style="color:#2eb068; font-weight: bold;">Choose Department :</label>
 
-          <div class="terms">
-            <input class="option" type="checkbox" id="CS" name="choose" value="CS">
-            <label>CS</label>
-
-            <input class="option" type="checkbox" id="IS" name="choose" value="IS"> <label>IS</label>
-            <input class="option" type="checkbox" id="IT" name="choose" value="IT"> <label>IT</label>
+          <div class="input-field">
+            <select name="department" id="" class="input-field">
+              {{#each departments}}
+              <option value="{{_id}}">{{name}}</option>
+              {{/each}}
+            </select>
           </div>
 
-          <button class="btn" type="button"> Adding</button>
+          <button class="btn btn-success" type="submit"> Create</button>
           <section class="footer">
 
             <div class="icons">
-      
-      
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fas fa-envelope-open"></i>
-      
-      
+
+
+
             </div>
           </section>
-          </div>
-          </form>
-
         </div>
+      </form>
 
-     <div class="attendane" id="5" style="visibility: hidden;">
+    </div>
+
+    <div class="attendane" id="5" style="visibility: hidden;">
       <h1>Student Attendance</h1>
 
       <table>
-          <thead>
-              <tr>
-                  <th class="name-col">Student Name</th>
-                  <th>1</th>
-                  <th>2</th>
-                  <th>3</th>
-                  <th>4</th>
-                  <th>5</th>
-                  <th>6</th>
-                  <th>7</th>
-                  <th>8</th>
-                  <th>9</th>
-                  <th>10</th>
-                  <th>11</th>
-                  <th>12</th>
-                  <th class="missed-col">Days Missed-col</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr class="student">
-                  <td class="name-col">Sama</td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="missed-col">0</td>
-              </tr>
-              <tr class="student">
-                  <td class="name-col">Shahd</td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="missed-col">0</td>
-              </tr>
-              <tr class="student">
-                  <td class="name-col">Nada</td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="missed-col">0</td>
-              </tr>
-              <tr class="student">
-                  <td class="name-col">Abdelrahman</td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="missed-col">0</td>
-              </tr>
-              <tr class="student">
-                  <td class="name-col">Abdelaziz</td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="attend-col"><input type="checkbox"></td>
-                  <td class="missed-col">0</td>
-              </tr>
-              <tr class="student">
-                <td class="name-col">Basma</td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="attend-col"><input type="checkbox"></td>
-                <td class="missed-col">0</td>
-            </tr>
-          </tbody>
+        <thead>
+          <tr>
+            <th class="name-col">Student Name</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th class="missed-col">Days Missed-col</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="student">
+            <td class="name-col">Sama</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Shahd</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Nada</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Abdelrahman</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Abdelaziz</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+          </tr>
+          <tr class="student">
+            <td class="name-col">Basma</td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="attend-col"><input type="checkbox"></td>
+            <td class="missed-col">0</td>
+          </tr>
+        </tbody>
       </table>
 
     </div>
@@ -726,85 +723,85 @@ td.missed-col {
 
 
 
-      (function() {
-    if (!localStorage.attendance) {
-        console.log('Creating attendance records...');
-        function getRandom() {
+      (function () {
+        if (!localStorage.attendance) {
+          console.log('Creating attendance records...');
+          function getRandom() {
             return (Math.random() >= 0.5);
-        }
+          }
 
-        var nameColumns = $('tbody .name-col'),
+          var nameColumns = $('tbody .name-col'),
             attendance = {};
 
-        nameColumns.each(function() {
+          nameColumns.each(function () {
             var name = this.innerText;
             attendance[name] = [];
 
             for (var i = 0; i <= 11; i++) {
-                attendance[name].push(getRandom());
+              attendance[name].push(getRandom());
             }
-        });
+          });
 
-        localStorage.attendance = JSON.stringify(attendance);
-    }
-}());
+          localStorage.attendance = JSON.stringify(attendance);
+        }
+      }());
 
 
-/* STUDENT APPLICATION */
-$(function() {
-    var attendance = JSON.parse(localStorage.attendance),
-        $allMissed = $('tbody .missed-col'),
-        $allCheckboxes = $('tbody input');
+      /* STUDENT APPLICATION */
+      $(function () {
+        var attendance = JSON.parse(localStorage.attendance),
+          $allMissed = $('tbody .missed-col'),
+          $allCheckboxes = $('tbody input');
 
-    // Count a student's missed days
-    function countMissing() {
-        $allMissed.each(function() {
+        // Count a student's missed days
+        function countMissing() {
+          $allMissed.each(function () {
             var studentRow = $(this).parent('tr'),
-                dayChecks = $(studentRow).children('td').children('input'),
-                numMissed = 0;
+              dayChecks = $(studentRow).children('td').children('input'),
+              numMissed = 0;
 
-            dayChecks.each(function() {
-                if (!$(this).prop('checked')) {
-                    numMissed++;
-                }
+            dayChecks.each(function () {
+              if (!$(this).prop('checked')) {
+                numMissed++;
+              }
             });
 
             $(this).text(numMissed);
-        });
-    }
+          });
+        }
 
-    // Check boxes, based on attendace records
-    $.each(attendance, function(name, days) {
-        var studentRow = $('tbody .name-col:contains("' + name + '")').parent('tr'),
+        // Check boxes, based on attendace records
+        $.each(attendance, function (name, days) {
+          var studentRow = $('tbody .name-col:contains("' + name + '")').parent('tr'),
             dayChecks = $(studentRow).children('.attend-col').children('input');
 
-        dayChecks.each(function(i) {
+          dayChecks.each(function (i) {
             $(this).prop('checked', days[i]);
+          });
         });
-    });
 
-    // When a checkbox is clicked, update localStorage
-    $allCheckboxes.on('click', function() {
-        var studentRows = $('tbody .student'),
+        // When a checkbox is clicked, update localStorage
+        $allCheckboxes.on('click', function () {
+          var studentRows = $('tbody .student'),
             newAttendance = {};
 
-        studentRows.each(function() {
+          studentRows.each(function () {
             var name = $(this).children('.name-col').text(),
-                $allCheckboxes = $(this).children('td').children('input');
+              $allCheckboxes = $(this).children('td').children('input');
 
             newAttendance[name] = [];
 
-            $allCheckboxes.each(function() {
-                newAttendance[name].push($(this).prop('checked'));
+            $allCheckboxes.each(function () {
+              newAttendance[name].push($(this).prop('checked'));
             });
+          });
+
+          countMissing();
+          localStorage.attendance = JSON.stringify(newAttendance);
         });
 
         countMissing();
-        localStorage.attendance = JSON.stringify(newAttendance);
-    });
-
-    countMissing();
-}());
+      }());
 
     </script>
-    </body>
+</body>

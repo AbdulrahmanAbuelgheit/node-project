@@ -1,24 +1,19 @@
 import { Schema, model } from "mongoose";
 
-const subjectdb = new Schema({
-    name: {
+const studentAccountdb = new Schema({
+    username: {
         type: String,
         required: true,
     },
-    code: {
+    password: {
         type: String,
         required: true,
     },
-    pre: {
-        type: String,
-        required: false,
-    },
-    department: {
-        type: String,
+    acadimicNumber: {
+        type: Number,
         required: true,
     },
 }, { timestamps: true });
 
-export default model('subject', subjectdb);
-
+export default model('studentAccount', studentAccountdb);
 
