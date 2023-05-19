@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="../Css/admin.css" /> -->
+  <link rel="shortcut icon" href="https://mu.menofia.edu.eg/PrtlFiles/uni/Portal/SiteInfo/uni_en.png">
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>System Admin</title>
+</head>
+<style>
+  /*  import google fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: rgb(226, 226, 226);
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    width: 90px;
+    /* width: 280px; */
+    background: #fff;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  nav:hover {
+    width: 280px;
+    transition: 1s;
+  }
+
+  .logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+    padding-bottom: 3rem;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  .logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  a {
+    position: relative;
+    width: 280px;
+    font-size: 14px;
+    color: rgb(85, 83, 83);
+    display: table;
+    padding: 10px;
+  }
+
+  nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+  }
+
+  a:hover {
+    background: #eee;
+  }
+
+  a:hover i {
+    color: #34AF6D;
+    transition: 0.5s;
+  }
+
+  .logout {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  span {
+    font-size: 10px;
+  }
+
+  .form-box {
+
+    width: 70%;
+    max-width: 400px;
+    height: 530px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* flex-direction: column; */
+    margin-top: 30px;
+    border-radius: 50px;
+
+  }
+
+  .form-box h1 {
+
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-right: 30px;
+    position: relative;
+    color: #2eb068;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .input-field {
+    background: #eaeaea;
+    margin: 15px auto;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+  }
+
+  input {
+
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+    font-weight: bold;
+
+  }
+
+  .input-field i {
+    margin: 15px;
+    color: #999;
+
+  }
+
+
+  input[type="password"]:hover {
+    opacity: .5;
+  }
+
+  input[type="text"]:hover {
+    opacity: .5;
+  }
+
+  input:focus {
+    border: 1px solid rgb(192, 192, 192);
+    display: inline;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #4AD489;
+    font-size: 15px;
+
+  }
+
+  button:hover {
+    background: #4AD489;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+
+  .icons {
+    margin-right: 35px;
+    padding: 5px;
+  }
+
+  .icons {
+    color: rgb(85, 83, 83);
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .icons :hover {
+    opacity: .7;
+  }
+
+  .department {
+    width: 70%;
+    max-width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* flex-direction: column; */
+    /* margin-top: 30px; */
+    border-radius: 50px;
+  }
+
+  .department h1 {
+
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-right: 30px;
+    position: relative;
+    color: #2eb068;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+
+  .subject {
+    width: 400px;
+    max-width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 50px;
+  }
+
+  .subject h1 {
+
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-right: 30px;
+    position: relative;
+    color: #2eb068;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+
+  .terms {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 0 10px 0 10px;
+    /* display: flex; */
+  }
+
+  .terms input {
+    margin-left: 15px;
+  }
+
+  .terms label {
+    color: #2eb068;
+    margin-right: 10px;
+  }
+
+  .attendane {
+    width: 1000px;
+    /* max-width: 400px; */
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* flex-direction: column; */
+    /* margin-top: 30px; */
+    border-radius: 50px;
+    margin-left: 40px;
+  }
+
+  /* body {
+    line-height: 1.6;
+    margin: 2em;
+ }  */
+
+  th {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 0.5em 1em;
+  }
+
+  td {
+    border-top: 1px solid #eee;
+    padding: 0.5em 1em;
+  }
+
+  input {
+    cursor: pointer;
+  }
+
+  /* Column types */
+  th.missed-col {
+    background-color: #f00;
+  }
+
+  td.missed-col {
+    background-color: #ffecec;
+    color: #f00;
+    text-align: center;
+  }
+
+  .name-col {
+    text-align: left;
+  }
+</style>
+
+<body>
+  <div class="container">
+        <nav>
+        <ul>
+          <ul>
+            <li><a href="/admins" class="logo">
+                <img src="https://t3.ftcdn.net/jpg/03/62/56/24/360_F_362562495_Gau0POzcwR8JCfQuikVUTqzMFTo78vkF.jpg">
+                <span class="nav-item">Admin</span>
+            </a></li>
+            <li><a href="/admins/doctors">
+                <i class="fas fa-cog"></i>
+                <span class="nav-item">Doctor</span>
+            </a></li>
+            <li><a href="/admins/subjects">
+                <i class="fas fa-cog"></i>
+                <span class="nav-item">Subjects</span>
+            </a></li>
+            <li><a href="/admins/departments">
+                <i class="fas fa-cog"></i>
+                <span class="nav-item">Department</span>
+            </a></li>
+            <li><a href="/admins/students">
+                <i class="fas fa-cog"></i>
+                <span class="nav-item">Student</span>
+            </a></li>
+            <li><a href="/" >
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">LogOut</span>
+            </a></li>
+        </ul>
+        </nav>
+        <div>
+            <h1>Doctor List</h1>
+            {{#each doctors_list}}
+            <div>
+
+            <h4>{{username}}</h4>
+            <a href="doctors/{{_id}}">
+                <h5 class="text-danger">edit</h5>
+            </a>
+             <a href="doctors/delete/{{_id}}">
+                <h5 class="text-danger">delete</h5>
+            </a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</body>
+</html>
+    
