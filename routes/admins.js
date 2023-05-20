@@ -10,6 +10,7 @@ ad_router.get('/', async(req, res) => {
     const departments = await department.find().lean()
     res.render('admins/admin', { departments })
 });
+
 // update 
 ad_router.get('/subjects', async(req, res) => {
     const subjects_list = await subjects.find().lean()
