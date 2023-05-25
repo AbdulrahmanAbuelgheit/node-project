@@ -24,25 +24,11 @@ export const login = async (req,res) => {
 //       password,
 //       loggedstudent.password,
 //   );
-if(loggedstudent){
-  if(!isCorrectPassword){
-      return res.send('incorrect password');
-      }else{
-
-        res.render("students/student"); 
-      }}else{
-        return res.send('incorrect user');
-      }
-//       const data= {
-//           _id: loggedstudent._id,
-//          username: loggedstudent.username,
-
-//       };
-      
-//      const jwtToken = jwt.sign(data, process.env.JWT_SECRET);
-//      console.log(jwtToken);
-
+if(loggedstudent&&isCorrectPassword){
+ 
     
-//   res.cookie('token',jwtToken); 
-//   res.send('loggin')
-};
+        res.render("students/student"); 
+      }else{
+        return res.send('incorrect user or bassword');
+      };
+    };
